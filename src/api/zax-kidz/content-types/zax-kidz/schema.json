@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zax_kidzs",
+  "info": {
+    "singularName": "zax-kidz",
+    "pluralName": "zax-kidzs",
+    "displayName": "ZAX KIDZ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Price": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "Calories": {
+      "type": "string",
+      "default": "0",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}

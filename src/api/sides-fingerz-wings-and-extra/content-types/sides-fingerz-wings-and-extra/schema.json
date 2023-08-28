@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sides_fingerz_wings_and_extras",
+  "info": {
+    "singularName": "sides-fingerz-wings-and-extra",
+    "pluralName": "sides-fingerz-wings-and-extras",
+    "displayName": "SIDES,FINGERZ,WINGS&EXTRA",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Price": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "Calories": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    }
+  }
+}

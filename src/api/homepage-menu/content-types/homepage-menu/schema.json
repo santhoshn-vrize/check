@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepage_menus",
+  "info": {
+    "singularName": "homepage-menu",
+    "pluralName": "homepage-menus",
+    "displayName": "homepage-menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MenuCategoryName": {
+      "type": "string"
+    },
+    "MenuCategoryImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "SPECIALS",
+        "FINGERZ&WINGS,MEALZ",
+        "SANDWICHMEALZ",
+        "BIGZALADS",
+        "SIDES,FINGERZ,WINGS&EXTRAS",
+        "ZAX KIDZ",
+        "DESSERTS"
+      ]
+    },
+    "CategoryField": {
+      "type": "json"
+    },
+    "CategorySlug": {
+      "type": "uid",
+      "targetField": "MenuCategoryName"
+    }
+  }
+}

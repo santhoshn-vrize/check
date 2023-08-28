@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fingerz_and_wings_mealzs",
+  "info": {
+    "singularName": "fingerz-and-wings-mealz",
+    "pluralName": "fingerz-and-wings-mealzs",
+    "displayName": "FINGERZ & WINGS MEALZ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Calories": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}

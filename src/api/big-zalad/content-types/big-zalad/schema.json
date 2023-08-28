@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "big_zalads",
+  "info": {
+    "singularName": "big-zalad",
+    "pluralName": "big-zalads",
+    "displayName": "BigZalad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Calories": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "Price": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}

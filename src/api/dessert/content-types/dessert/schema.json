@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "desserts",
+  "info": {
+    "singularName": "dessert",
+    "pluralName": "desserts",
+    "displayName": "DESSERT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Price": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "Calories": {
+      "type": "string",
+      "default": "0",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}
